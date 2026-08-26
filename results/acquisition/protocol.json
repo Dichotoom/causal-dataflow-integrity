@@ -1,0 +1,137 @@
+{
+  "experiment_id": "FPIT_PATH_RL_FINAL_V1_6_20260813",
+  "method": "Factorized Path Intervention Training",
+  "frozen_question": "Does supervision of derived descendant/invariant clinical dataflow state improve intervention endpoint propagation relative to endpoint-only RL on identical prompts and equal compute?",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "seed": 3407,
+  "epochs": 2,
+  "K_train": 8,
+  "K_eval_sampled": 4,
+  "learning_rate": 5e-06,
+  "beta_kl": 0.001,
+  "loss_type": "dapo",
+  "scale_rewards": "none",
+  "max_prompt_length": 768,
+  "max_completion_length": 192,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "continuous_rel_tol": 0.02,
+  "continuous_round_decimals": 2,
+  "structured_primary_slugs": [
+    "cha2ds2_vasc",
+    "fena",
+    "gcs",
+    "sirs"
+  ],
+  "flat_control_slugs": [
+    "bmi",
+    "corrected_sodium"
+  ],
+  "endpoint_reward": "(# correct of BASE_ANSWER, NEW_ANSWER) / 2",
+  "path_reward": "flat graphs: identical to endpoint; structured graphs: endpoint_reward + 0.25 * balanced_factor_score, where balanced_factor_score = 0.5 * mean(changed-path factors) + 0.5 * mean(invariant factors). The endpoint component is identical to the endpoint-only arm, and the factor bonus cannot overturn endpoint-correctness tiers.",
+  "path_factor_fields": {
+    "cha2ds2_vasc": [
+      "NEW_AGE_POINTS",
+      "NEW_SEX_POINTS",
+      "NEW_CHF_POINTS",
+      "NEW_HYPERTENSION_POINTS",
+      "NEW_STROKE_TIA_TE_POINTS",
+      "NEW_VASCULAR_POINTS",
+      "NEW_DIABETES_POINTS"
+    ],
+    "bmi": [],
+    "gcs": [
+      "NEW_EYE_SCORE",
+      "NEW_VERBAL_SCORE",
+      "NEW_MOTOR_SCORE"
+    ],
+    "corrected_sodium": [],
+    "fena": [
+      "NEW_NUMERATOR",
+      "NEW_DENOMINATOR"
+    ],
+    "sirs": [
+      "NEW_TEMP_POINT",
+      "NEW_HEART_RATE_POINT",
+      "NEW_WBC_POINT",
+      "NEW_RESPIRATORY_POINT"
+    ]
+  },
+  "smoke_exposed_prompt_hashes_excluded_from_primary": [
+    "1a20459d1b49f28c6e8d6f63791b7aa5957ba7158ae84d592eb872768f69f3a4",
+    "598d4bcbffc1ce7ce2f3c76e26948b77350ce7ffc67a913f86c33f99f5466d15",
+    "63673a3026ee95b8c1640238d1396a44c5f365a658ad4abbf95947ec2e9a393d",
+    "8cfb727b6f1f1dee805ea11bf60050cda8d55cbadce3f02b6e736e219b1b265e",
+    "8e031177945b89c2a3ddd4d3dd02581d19313020f04ef9e6b5493a4a5ef8002c",
+    "9d2fad4968ba1484b129e1a161d68b1b6a8e5af084154a9cac9ce2b78b64a2ea",
+    "9e7ed04a2dbc82eb1247f5fca46a65306f84433c8a52790766ebe3f702ace98b",
+    "b1cc4541f2c40bfa2d7a28e951b78706a94902fcfaa9bf7ec49e518bdf7535a5",
+    "be5062aa962a3be4d0f50a107fa38df386dd322d11f266e7d76f8fa631f2e160",
+    "e4c189949eb3c8291319a0e6f55370515b0bf83fcde7aeade0ee1c6709d15735",
+    "f2df08afade3324b670fac6911747ef527289dd19a09e484c4e0ad77bc60a7bc",
+    "fd647aea7b5602410336c6415b01267ba1011be9d4bd457ee6ee3c1fb3118f24"
+  ],
+  "explicit_exclusions": [
+    "NEW_RESULT and NEW_TOTAL are not path bonuses because they duplicate NEW_ANSWER",
+    "no expression evaluation",
+    "no prose/rule verifier",
+    "no factor gating",
+    "no token-localized/custom loss"
+  ],
+  "primary_eval": "greedy pair_accuracy on structured calculators pooled across confirmatory held-out pairs, excluding the 12 engineering-smoke-exposed prompts (8 structured)",
+  "secondary_eval": [
+    "overall pair_accuracy",
+    "direction_accuracy",
+    "base_accuracy",
+    "new_accuracy",
+    "changed_factor_accuracy",
+    "invariant_factor_accuracy",
+    "path_full_accuracy",
+    "sampled K=4 case-level means",
+    "all-92 held-out evaluation including smoke-exposed cases is descriptive only",
+    "per-calculator descriptive results; GCS has very small confirmatory n and is secondary only"
+  ],
+  "corpus": {
+    "train_sha256": "863dbe27047f13d1d1805d2fb959e00dac165af93a36cd979a860466e15dc9df",
+    "test_sha256": "c5a485192c7bc1a007145cee805e647d37d505b91168debc1a4f84e052638b86",
+    "train_n": 1376,
+    "test_n": 92,
+    "train_counts": {
+      "cha2ds2_vasc": 436,
+      "bmi": 442,
+      "gcs": 60,
+      "corrected_sodium": 236,
+      "fena": 76,
+      "sirs": 126
+    },
+    "test_counts": {
+      "cha2ds2_vasc": 15,
+      "bmi": 15,
+      "gcs": 7,
+      "corrected_sodium": 20,
+      "fena": 20,
+      "sirs": 15
+    },
+    "repo_commit": "88ed8fd8abb85e0cff6e9103dffc331c940e01e7",
+    "compiler_sha256": "1f46f7c1900a3e13ffa91146c95e10177cda642d1bfc873d880745e33fb84af3",
+    "source_overlap": 0,
+    "prompt_overlap": 0,
+    "smoke_exposed_test_cases": 12,
+    "smoke_exposed_structured_cases": 8,
+    "confirmatory_test_cases": 80,
+    "confirmatory_structured_cases": 49,
+    "status": "PASS"
+  },
+  "environment": {
+    "torch": "2.5.0+cu124",
+    "cuda": "12.4",
+    "trl": "0.24.0",
+    "transformers": "5.5.0",
+    "unsloth": "2026.8.12",
+    "xformers": "0.0.28.post2",
+    "datasets": "4.3.0",
+    "accelerate": "1.14.0",
+    "peft": "0.20.0"
+  },
+  "smoke_test": false
+}

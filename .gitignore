@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+
+*.safetensors
+*.pt
+*.bin
+*.tar.gz
+checkpoints/
+outputs/
+wandb/

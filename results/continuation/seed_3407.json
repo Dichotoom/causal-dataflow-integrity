@@ -1,0 +1,1294 @@
+{
+  "experiment_id": "FPIT_HANDOFF_AB_V1_20260814",
+  "starting_fpit": {
+    "pair_correct": 7,
+    "n": 49,
+    "pair_accuracy": 0.14285714285714285
+  },
+  "arms": [
+    {
+      "experiment_id": "FPIT_HANDOFF_AB_V1_20260814",
+      "arm": "A",
+      "arm_name": "A_fpit_continue",
+      "reward_definition": "archived RewardOracle('path') unchanged",
+      "primary_checkpoint": "final checkpoint only",
+      "primary": {
+        "summary": {
+          "overall": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.2653061224489796,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.3469387755102041,
+            "pair_accuracy": 0.1836734693877551,
+            "direction_accuracy": 0.6326530612244898,
+            "factor_accuracy": 0.5969387755102041,
+            "changed_factor_accuracy": 0.6326530612244898,
+            "invariant_factor_accuracy": 0.5612244897959183,
+            "factor_all_correct": 0.5102040816326531,
+            "path_full_accuracy": 0.16326530612244897
+          },
+          "structured_all_heldout": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.2653061224489796,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.3469387755102041,
+            "pair_accuracy": 0.1836734693877551,
+            "direction_accuracy": 0.6326530612244898,
+            "factor_accuracy": 0.5969387755102041,
+            "changed_factor_accuracy": 0.6326530612244898,
+            "invariant_factor_accuracy": 0.5612244897959183,
+            "factor_all_correct": 0.5102040816326531,
+            "path_full_accuracy": 0.16326530612244897
+          },
+          "confirmatory_all": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.2653061224489796,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.3469387755102041,
+            "pair_accuracy": 0.1836734693877551,
+            "direction_accuracy": 0.6326530612244898,
+            "factor_accuracy": 0.5969387755102041,
+            "changed_factor_accuracy": 0.6326530612244898,
+            "invariant_factor_accuracy": 0.5612244897959183,
+            "factor_all_correct": 0.5102040816326531,
+            "path_full_accuracy": 0.16326530612244897
+          },
+          "structured_primary": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.2653061224489796,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.3469387755102041,
+            "pair_accuracy": 0.1836734693877551,
+            "direction_accuracy": 0.6326530612244898,
+            "factor_accuracy": 0.5969387755102041,
+            "changed_factor_accuracy": 0.6326530612244898,
+            "invariant_factor_accuracy": 0.5612244897959183,
+            "factor_all_correct": 0.5102040816326531,
+            "path_full_accuracy": 0.16326530612244897
+          },
+          "flat_controls": {},
+          "per_calculator": {
+            "cha2ds2_vasc": {
+              "n_rollouts": 13,
+              "n_cases": 13,
+              "format_complete": 1.0,
+              "base_accuracy": 0.3076923076923077,
+              "new_accuracy": 0.6153846153846154,
+              "endpoint_field_accuracy": 0.46153846153846156,
+              "pair_accuracy": 0.23076923076923078,
+              "direction_accuracy": 0.9230769230769231,
+              "factor_accuracy": 0.9935897435897436,
+              "changed_factor_accuracy": 1.0,
+              "invariant_factor_accuracy": 0.9871794871794872,
+              "factor_all_correct": 0.9230769230769231,
+              "path_full_accuracy": 0.23076923076923078
+            },
+            "bmi": {},
+            "gcs": {
+              "n_rollouts": 5,
+              "n_cases": 5,
+              "format_complete": 1.0,
+              "base_accuracy": 0.6,
+              "new_accuracy": 0.2,
+              "endpoint_field_accuracy": 0.4,
+              "pair_accuracy": 0.2,
+              "direction_accuracy": 0.4,
+              "factor_accuracy": 0.8,
+              "changed_factor_accuracy": 1.0,
+              "invariant_factor_accuracy": 0.6,
+              "factor_all_correct": 0.6,
+              "path_full_accuracy": 0.0
+            },
+            "corrected_sodium": {},
+            "fena": {
+              "n_rollouts": 18,
+              "n_cases": 18,
+              "format_complete": 1.0,
+              "base_accuracy": 0.0,
+              "new_accuracy": 0.05555555555555555,
+              "endpoint_field_accuracy": 0.027777777777777776,
+              "pair_accuracy": 0.0,
+              "direction_accuracy": 0.3888888888888889,
+              "factor_accuracy": 0.0,
+              "changed_factor_accuracy": 0.0,
+              "invariant_factor_accuracy": 0.0,
+              "factor_all_correct": 0.0,
+              "path_full_accuracy": 0.0
+            },
+            "sirs": {
+              "n_rollouts": 13,
+              "n_cases": 13,
+              "format_complete": 1.0,
+              "base_accuracy": 0.46153846153846156,
+              "new_accuracy": 0.8461538461538461,
+              "endpoint_field_accuracy": 0.6538461538461539,
+              "pair_accuracy": 0.38461538461538464,
+              "direction_accuracy": 0.7692307692307693,
+              "factor_accuracy": 0.9487179487179487,
+              "changed_factor_accuracy": 1.0,
+              "invariant_factor_accuracy": 0.8974358974358975,
+              "factor_all_correct": 0.7692307692307693,
+              "path_full_accuracy": 0.38461538461538464
+            }
+          },
+          "case_level": [
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "43",
+              "prompt_hash": "a88699752f03ac2813f1fd2a4a95fb486a6d282d4b891e376271a536c3a6d26b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "44",
+              "prompt_hash": "2829251afde1ab4d1bfbfaa496b48f482eec228c5d480ed9757ab47da1a84e6b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "45",
+              "prompt_hash": "e6ff800fae3a5d829000bdd8ce674d487807b8e823abc8c4fea4e0ece2b54beb",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "46",
+              "prompt_hash": "de03a3c5ac2a81b472638e8cff2ff935894fec0df256dc061e37fc8fa6d40203",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "47",
+              "prompt_hash": "aae8bdcd7da27fa91b3785385cffa1e9dac0ac0752ac56f321195fbd00bad845",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "48",
+              "prompt_hash": "acb2e9337cdbceae2b926717a6d7ce9fe874daf88822658c321c0ed8442448b4",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "49",
+              "prompt_hash": "83a13b72ca93a0fd5d4dec6a5d8008566ff6d6b79372ad8851826b17257b2c4f",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "51",
+              "prompt_hash": "d8e7e89aacbedf199c25e483354e19f6015497bf1b16a67dcda2ec80936460d0",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "52",
+              "prompt_hash": "c1f632495c13ec99b366c5dfd7fed0ebb7b7bc935391b195785a223f59f9dc70",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "55",
+              "prompt_hash": "76eebb43f6e2c0daba56fdee71e123b8031e29130352e775cd22dc65ed7b9751",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "56",
+              "prompt_hash": "6731e6df4230636465b5c0116362ce3d88f3d06cb4aa0c2b0be6b41aaf75cd7d",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "58",
+              "prompt_hash": "8b3ef16cf3f7f243c5d183d73878d59c4433a212bb6f82b32db9574117b179ee",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "60",
+              "prompt_hash": "60ca02a2dd341bf1673c43664c759f0ff331d11571fae1da52e8dcbc095a5e03",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "561",
+              "prompt_hash": "b278821d50680737d525e243bb9c4b8556a87b1d2bd56dc938411002815daafa",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "562",
+              "prompt_hash": "5693eaff96d212d9c13c8c56373f6dc555ec452f680f4412517764aae4ba0b88",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "564",
+              "prompt_hash": "56c7f10b4afbcb7d7c89aab9e721d514fde3a781fc0d2b3e5af134a3ec930c3b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "565",
+              "prompt_hash": "ad7610b05d79275b1bfac43f4540ae618ae5895efa98293b76b79ab0a7144f9c",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "566",
+              "prompt_hash": "5cd660cba5c8307e28647739109e2a77cfaa7a1cdb939f90822cf600555e5126",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "567",
+              "prompt_hash": "7b8f4ec91405feff15ddb6fc502052f8374988bf94a2ef5a0405f325b63b65c1",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "568",
+              "prompt_hash": "88adbd97e463a3391f1cb7506c26be666652921c4558fc83b9165248543d030f",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "569",
+              "prompt_hash": "f6097664ba6b997dd3916c607581cae87afef85ab78e0932c077d949a5700d5c",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "570",
+              "prompt_hash": "b8b5367ad046ea9e018a0474a1aa679f69f42205fbdaa8ebde0b7054309101e8",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "571",
+              "prompt_hash": "d391822c260e4d6f30765bb8081909073b17faa6916d1b69d7bbe083aa2484c3",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "572",
+              "prompt_hash": "06bab154d3fd06951e19b005342fb5c10819b473940a0a83fa8952d28a34ee29",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "573",
+              "prompt_hash": "45715a5a6ec11cf9edfcb9842407840be4e622442f29d47a6954d4906b1c6c03",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "574",
+              "prompt_hash": "a2b4d0a095b6bbf39086d6aed8193bb7dee8183404756e4f1ec611c9d1f5a90b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "576",
+              "prompt_hash": "a041322519ee6897618970009d3ed93b98d2a855123ceb4aa12029a1838bcd2b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "577",
+              "prompt_hash": "c4fd1ed7eab45b5755737953fceb3fff6730e99f13a416dfc1c4c13dea33a56e",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "578",
+              "prompt_hash": "b88054df95192ccd277f072072be9f021ec5b0e6f7f7a1365f89270f396bfd43",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "579",
+              "prompt_hash": "0011df32f6aca7bac3cdf1e135cc375dece21ab8a2a0cd917ccaf5864790840b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "580",
+              "prompt_hash": "f7a884f81d46801a95f6c241eee5b0d7e5498f57382f70ec73a4b4e8dd61a805",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "903",
+              "prompt_hash": "5127ad1d69541cf25b5b207e8fb9dabdb05b55ff47aa66e0f6b0ff45224ffa4a",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "905",
+              "prompt_hash": "82f14e5ea067fe4b974b13c778f6bed04e20a8ec85d4800e418e049df1a06d14",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "911",
+              "prompt_hash": "d1c56426ce098d8746ed4bec1de4fc7f27610ee52e2fe3a7cd87873f5b1d4ba3",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "912",
+              "prompt_hash": "d1a233b2cf827d8e5fec89340cd27cf2765a9e37d0af38dd873ee27c937d1cec",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "913",
+              "prompt_hash": "da7afea67d891dac5a3b96f93e46d35a433b5c84ad368aed7b7d799f6acabdd9",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "643",
+              "prompt_hash": "710494a43fcb2d69f6d0b2e32121c367427a9da43454455f8d49266869abd0e5",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "644",
+              "prompt_hash": "957d2590fd44dffb254e051ca809df0bda3fbfbe81f25e4fc159a1ea6d7bf290",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "646",
+              "prompt_hash": "2e166ed5927d86b5d1e244b7ea88929aa1d1a181635674b07b5c92308b8031a0",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "649",
+              "prompt_hash": "3af4645dd4e49766206f66699f331373ea603b43d70c417657bf336bd352f23e",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "651",
+              "prompt_hash": "21552a366478c0b67fbda3095eb3ef42a55e30d6abe9c4d9ab12f997ec471c33",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "652",
+              "prompt_hash": "92fa88e517990f408349294286ae03f024e667e7e1257b87e74d0164726556c7",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "653",
+              "prompt_hash": "fce764adb17d4f440d3407f0cd9cab623d1cdc97a5e2cf2ebc57df318a9a307f",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "654",
+              "prompt_hash": "abafc7b1c902ac34f7287b7e5232431f131ae7227459f304a47bb2a56d31ce79",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "656",
+              "prompt_hash": "a389dd028fbcbbe5fd64e6001167ae1c1c09984e101a8431b737484346340ac5",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "657",
+              "prompt_hash": "3234df8c9efd27ebdcff2f57347c0416093439be43dd97ae4e2ac796ea72be55",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "658",
+              "prompt_hash": "8bbe195fd7838302aaac27ff077773361d73a794b36a6e5612d60f01b6bcd554",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "659",
+              "prompt_hash": "ea191086a32e663ad51e73742e4ee3c747f7fdf2c754bffc14502306b71071aa",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "660",
+              "prompt_hash": "77e5f3c9b10d6d80a704894de13440310726e98f8c492a489b6b72fc295a8ef8",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            }
+          ]
+        },
+        "pair_correct": 9,
+        "n": 49,
+        "pair_accuracy": 0.1836734693877551
+      },
+      "training": {
+        "train_seconds": 27308.217797938734,
+        "global_step": 5504,
+        "epoch": 4.0
+      },
+      "adapter_final": "/workspace/fpit_handoff_ab/results/A_fpit_continue/adapter_final"
+    },
+    {
+      "experiment_id": "FPIT_HANDOFF_AB_V1_20260814",
+      "arm": "B",
+      "arm_name": "B_strict_handoff",
+      "reward_definition": "R = 1[BASE correct AND NEW correct]",
+      "primary_checkpoint": "final checkpoint only",
+      "primary": {
+        "summary": {
+          "overall": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.40816326530612246,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.41836734693877553,
+            "pair_accuracy": 0.32653061224489793,
+            "direction_accuracy": 0.6530612244897959,
+            "factor_accuracy": 0.5952380952380952,
+            "changed_factor_accuracy": 0.5918367346938775,
+            "invariant_factor_accuracy": 0.5986394557823129,
+            "factor_all_correct": 0.5510204081632653,
+            "path_full_accuracy": 0.30612244897959184
+          },
+          "structured_all_heldout": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.40816326530612246,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.41836734693877553,
+            "pair_accuracy": 0.32653061224489793,
+            "direction_accuracy": 0.6530612244897959,
+            "factor_accuracy": 0.5952380952380952,
+            "changed_factor_accuracy": 0.5918367346938775,
+            "invariant_factor_accuracy": 0.5986394557823129,
+            "factor_all_correct": 0.5510204081632653,
+            "path_full_accuracy": 0.30612244897959184
+          },
+          "confirmatory_all": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.40816326530612246,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.41836734693877553,
+            "pair_accuracy": 0.32653061224489793,
+            "direction_accuracy": 0.6530612244897959,
+            "factor_accuracy": 0.5952380952380952,
+            "changed_factor_accuracy": 0.5918367346938775,
+            "invariant_factor_accuracy": 0.5986394557823129,
+            "factor_all_correct": 0.5510204081632653,
+            "path_full_accuracy": 0.30612244897959184
+          },
+          "structured_primary": {
+            "n_rollouts": 49,
+            "n_cases": 49,
+            "format_complete": 1.0,
+            "base_accuracy": 0.40816326530612246,
+            "new_accuracy": 0.42857142857142855,
+            "endpoint_field_accuracy": 0.41836734693877553,
+            "pair_accuracy": 0.32653061224489793,
+            "direction_accuracy": 0.6530612244897959,
+            "factor_accuracy": 0.5952380952380952,
+            "changed_factor_accuracy": 0.5918367346938775,
+            "invariant_factor_accuracy": 0.5986394557823129,
+            "factor_all_correct": 0.5510204081632653,
+            "path_full_accuracy": 0.30612244897959184
+          },
+          "flat_controls": {},
+          "per_calculator": {
+            "cha2ds2_vasc": {
+              "n_rollouts": 13,
+              "n_cases": 13,
+              "format_complete": 1.0,
+              "base_accuracy": 0.6923076923076923,
+              "new_accuracy": 0.6153846153846154,
+              "endpoint_field_accuracy": 0.6538461538461539,
+              "pair_accuracy": 0.5384615384615384,
+              "direction_accuracy": 1.0,
+              "factor_accuracy": 0.9935897435897436,
+              "changed_factor_accuracy": 1.0,
+              "invariant_factor_accuracy": 0.9871794871794872,
+              "factor_all_correct": 0.9230769230769231,
+              "path_full_accuracy": 0.5384615384615384
+            },
+            "bmi": {},
+            "gcs": {
+              "n_rollouts": 5,
+              "n_cases": 5,
+              "format_complete": 1.0,
+              "base_accuracy": 0.6,
+              "new_accuracy": 0.2,
+              "endpoint_field_accuracy": 0.4,
+              "pair_accuracy": 0.2,
+              "direction_accuracy": 0.4,
+              "factor_accuracy": 0.65,
+              "changed_factor_accuracy": 0.6,
+              "invariant_factor_accuracy": 0.7,
+              "factor_all_correct": 0.4,
+              "path_full_accuracy": 0.0
+            },
+            "corrected_sodium": {},
+            "fena": {
+              "n_rollouts": 18,
+              "n_cases": 18,
+              "format_complete": 1.0,
+              "base_accuracy": 0.0,
+              "new_accuracy": 0.0,
+              "endpoint_field_accuracy": 0.0,
+              "pair_accuracy": 0.0,
+              "direction_accuracy": 0.2777777777777778,
+              "factor_accuracy": 0.0,
+              "changed_factor_accuracy": 0.0,
+              "invariant_factor_accuracy": 0.0,
+              "factor_all_correct": 0.0,
+              "path_full_accuracy": 0.0
+            },
+            "sirs": {
+              "n_rollouts": 13,
+              "n_cases": 13,
+              "format_complete": 1.0,
+              "base_accuracy": 0.6153846153846154,
+              "new_accuracy": 0.9230769230769231,
+              "endpoint_field_accuracy": 0.7692307692307693,
+              "pair_accuracy": 0.6153846153846154,
+              "direction_accuracy": 0.9230769230769231,
+              "factor_accuracy": 1.0,
+              "changed_factor_accuracy": 1.0,
+              "invariant_factor_accuracy": 1.0,
+              "factor_all_correct": 1.0,
+              "path_full_accuracy": 0.6153846153846154
+            }
+          },
+          "case_level": [
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "43",
+              "prompt_hash": "a88699752f03ac2813f1fd2a4a95fb486a6d282d4b891e376271a536c3a6d26b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "44",
+              "prompt_hash": "2829251afde1ab4d1bfbfaa496b48f482eec228c5d480ed9757ab47da1a84e6b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "45",
+              "prompt_hash": "e6ff800fae3a5d829000bdd8ce674d487807b8e823abc8c4fea4e0ece2b54beb",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "46",
+              "prompt_hash": "de03a3c5ac2a81b472638e8cff2ff935894fec0df256dc061e37fc8fa6d40203",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "47",
+              "prompt_hash": "aae8bdcd7da27fa91b3785385cffa1e9dac0ac0752ac56f321195fbd00bad845",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "48",
+              "prompt_hash": "acb2e9337cdbceae2b926717a6d7ce9fe874daf88822658c321c0ed8442448b4",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "49",
+              "prompt_hash": "83a13b72ca93a0fd5d4dec6a5d8008566ff6d6b79372ad8851826b17257b2c4f",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "51",
+              "prompt_hash": "d8e7e89aacbedf199c25e483354e19f6015497bf1b16a67dcda2ec80936460d0",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "52",
+              "prompt_hash": "c1f632495c13ec99b366c5dfd7fed0ebb7b7bc935391b195785a223f59f9dc70",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "55",
+              "prompt_hash": "76eebb43f6e2c0daba56fdee71e123b8031e29130352e775cd22dc65ed7b9751",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "56",
+              "prompt_hash": "6731e6df4230636465b5c0116362ce3d88f3d06cb4aa0c2b0be6b41aaf75cd7d",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "58",
+              "prompt_hash": "8b3ef16cf3f7f243c5d183d73878d59c4433a212bb6f82b32db9574117b179ee",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "cha2ds2_vasc",
+              "row_number": "60",
+              "prompt_hash": "60ca02a2dd341bf1673c43664c759f0ff331d11571fae1da52e8dcbc095a5e03",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "561",
+              "prompt_hash": "b278821d50680737d525e243bb9c4b8556a87b1d2bd56dc938411002815daafa",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "562",
+              "prompt_hash": "5693eaff96d212d9c13c8c56373f6dc555ec452f680f4412517764aae4ba0b88",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "564",
+              "prompt_hash": "56c7f10b4afbcb7d7c89aab9e721d514fde3a781fc0d2b3e5af134a3ec930c3b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "565",
+              "prompt_hash": "ad7610b05d79275b1bfac43f4540ae618ae5895efa98293b76b79ab0a7144f9c",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "566",
+              "prompt_hash": "5cd660cba5c8307e28647739109e2a77cfaa7a1cdb939f90822cf600555e5126",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "567",
+              "prompt_hash": "7b8f4ec91405feff15ddb6fc502052f8374988bf94a2ef5a0405f325b63b65c1",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "568",
+              "prompt_hash": "88adbd97e463a3391f1cb7506c26be666652921c4558fc83b9165248543d030f",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "569",
+              "prompt_hash": "f6097664ba6b997dd3916c607581cae87afef85ab78e0932c077d949a5700d5c",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "570",
+              "prompt_hash": "b8b5367ad046ea9e018a0474a1aa679f69f42205fbdaa8ebde0b7054309101e8",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "571",
+              "prompt_hash": "d391822c260e4d6f30765bb8081909073b17faa6916d1b69d7bbe083aa2484c3",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "572",
+              "prompt_hash": "06bab154d3fd06951e19b005342fb5c10819b473940a0a83fa8952d28a34ee29",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "573",
+              "prompt_hash": "45715a5a6ec11cf9edfcb9842407840be4e622442f29d47a6954d4906b1c6c03",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "574",
+              "prompt_hash": "a2b4d0a095b6bbf39086d6aed8193bb7dee8183404756e4f1ec611c9d1f5a90b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "576",
+              "prompt_hash": "a041322519ee6897618970009d3ed93b98d2a855123ceb4aa12029a1838bcd2b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "577",
+              "prompt_hash": "c4fd1ed7eab45b5755737953fceb3fff6730e99f13a416dfc1c4c13dea33a56e",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "578",
+              "prompt_hash": "b88054df95192ccd277f072072be9f021ec5b0e6f7f7a1365f89270f396bfd43",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "579",
+              "prompt_hash": "0011df32f6aca7bac3cdf1e135cc375dece21ab8a2a0cd917ccaf5864790840b",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "fena",
+              "row_number": "580",
+              "prompt_hash": "f7a884f81d46801a95f6c241eee5b0d7e5498f57382f70ec73a4b4e8dd61a805",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "903",
+              "prompt_hash": "5127ad1d69541cf25b5b207e8fb9dabdb05b55ff47aa66e0f6b0ff45224ffa4a",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "905",
+              "prompt_hash": "82f14e5ea067fe4b974b13c778f6bed04e20a8ec85d4800e418e049df1a06d14",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "911",
+              "prompt_hash": "d1c56426ce098d8746ed4bec1de4fc7f27610ee52e2fe3a7cd87873f5b1d4ba3",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "912",
+              "prompt_hash": "d1a233b2cf827d8e5fec89340cd27cf2765a9e37d0af38dd873ee27c937d1cec",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "gcs",
+              "row_number": "913",
+              "prompt_hash": "da7afea67d891dac5a3b96f93e46d35a433b5c84ad368aed7b7d799f6acabdd9",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "643",
+              "prompt_hash": "710494a43fcb2d69f6d0b2e32121c367427a9da43454455f8d49266869abd0e5",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "644",
+              "prompt_hash": "957d2590fd44dffb254e051ca809df0bda3fbfbe81f25e4fc159a1ea6d7bf290",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "646",
+              "prompt_hash": "2e166ed5927d86b5d1e244b7ea88929aa1d1a181635674b07b5c92308b8031a0",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "649",
+              "prompt_hash": "3af4645dd4e49766206f66699f331373ea603b43d70c417657bf336bd352f23e",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "651",
+              "prompt_hash": "21552a366478c0b67fbda3095eb3ef42a55e30d6abe9c4d9ab12f997ec471c33",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "652",
+              "prompt_hash": "92fa88e517990f408349294286ae03f024e667e7e1257b87e74d0164726556c7",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "653",
+              "prompt_hash": "fce764adb17d4f440d3407f0cd9cab623d1cdc97a5e2cf2ebc57df318a9a307f",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "654",
+              "prompt_hash": "abafc7b1c902ac34f7287b7e5232431f131ae7227459f304a47bb2a56d31ce79",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "656",
+              "prompt_hash": "a389dd028fbcbbe5fd64e6001167ae1c1c09984e101a8431b737484346340ac5",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "657",
+              "prompt_hash": "3234df8c9efd27ebdcff2f57347c0416093439be43dd97ae4e2ac796ea72be55",
+              "n_samples": 1,
+              "pair_accuracy_mean": 0.0,
+              "endpoint_field_accuracy_mean": 0.5,
+              "direction_accuracy_mean": 0.0,
+              "path_full_accuracy_mean": 0.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "658",
+              "prompt_hash": "8bbe195fd7838302aaac27ff077773361d73a794b36a6e5612d60f01b6bcd554",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "659",
+              "prompt_hash": "ea191086a32e663ad51e73742e4ee3c747f7fdf2c754bffc14502306b71071aa",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            },
+            {
+              "calculator_slug": "sirs",
+              "row_number": "660",
+              "prompt_hash": "77e5f3c9b10d6d80a704894de13440310726e98f8c492a489b6b72fc295a8ef8",
+              "n_samples": 1,
+              "pair_accuracy_mean": 1.0,
+              "endpoint_field_accuracy_mean": 1.0,
+              "direction_accuracy_mean": 1.0,
+              "path_full_accuracy_mean": 1.0
+            }
+          ]
+        },
+        "pair_correct": 16,
+        "n": 49,
+        "pair_accuracy": 0.32653061224489793
+      },
+      "training": {
+        "train_seconds": 30213.599873004016,
+        "global_step": 5504,
+        "epoch": 4.0
+      },
+      "adapter_final": "/workspace/fpit_handoff_ab/results/B_strict_handoff/adapter_final"
+    }
+  ],
+  "paired_primary": {
+    "n": 49,
+    "A_pair_accuracy": 0.1836734693877551,
+    "B_pair_accuracy": 0.32653061224489793,
+    "delta_B_minus_A": 0.14285714285714282,
+    "A_wrong_B_right": 7,
+    "A_right_B_wrong": 0,
+    "mcnemar_exact_p": 0.015625
+  },
+  "delta_B_minus_A": 0.14285714285714282
+}
